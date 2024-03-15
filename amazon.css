@@ -145,6 +145,7 @@ span{
     width: 10px;
     height: fit-content;
     font-size: 1.2rem;
+    margin-right: 10px;
 }
 .panel-deals p a{
     color: #f3f3f3;
