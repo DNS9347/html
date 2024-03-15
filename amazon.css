@@ -142,7 +142,7 @@ span{
 }
 /* hero section*/
 .hero-section{
-    background-image: url("Desktop_Hero_3000x1200_2_1x._CB574373355_.jpg");
+    background-image: url("hero.jpg");
     background-size: cover;
    width: 100%;
     height:360px;
