@@ -136,10 +136,21 @@ span{
 .panel-optns{
     width: 70rem;
 }
+.panel-deals{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.panel-deals i{
+    color: whitesmoke;
+    width: 10px;
+    height: fit-content;
+    font-size: 1.2rem;
+}
 .panel-deals p a{
     color: #f3f3f3;
     text-decoration: none;
     font-weight: 600;
+    padding-left: 10px;
 }
 /* hero section*/
 .hero-section{
