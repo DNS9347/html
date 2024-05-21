@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="naveen";
+         console.log(str.toUpperCase());
+         // split(separator,limiter)
+        let res=str.split('');
+        console.log(res);
+
+        // reverse()
+        let res1=str.split('').reverse();
+        console.log(res1);
+
+        // join() => after reverse we can join with any format.
+        let res2=str.split('').reverse().join(',');
+        console.log(res2);
+
+        //length
+        let res3=str.length;
+        console.log(res3);
+
+        //charAt(index)
+        let res4=str.charAt(3);
+        console.log(res4);
+
+        //indexOf(searchValue,[fromIndex])
+        let res5=str.indexOf('e');
+        let res6=str.indexOf('n',2);
+        console.log(res5);
+        console.log(res6);
+
+        //lastIndexOf(searchValue,[fromIndex])
+        let res7=str.lastIndexOf('n');
+        console.log(res7);
+
+        //slice(startIndex,[endIndex])
+        let res8=str.slice(2);
+        console.log(res8);
+        let res9=str.slice(2,5);
+        console.log(res9);
+        let res10=str.slice(-2);
+        console.log(res10);
+        let res11=str.slice(-4,-2);
+        console.log(res11);
+        let res12=str.slice(-2,-4);
+        console.log('empty:',res12);
+
+        //substr()
+        let res13=str.substr(2,3);
+        console.log(res13);
+
+        //charCodeAt(index)
+        let res14=str.charCodeAt(3);
+        console.log(res14);
+
+        //concat(str1,str2...)
+        let res15=str.concat(" ","depuri");
+        console.log(res15);
+
+        //includes(SearchString,position)
+        let res16=str.includes('ee');
+        console.log(res16);
+
+        //endsWith()
+        let res17=str.endsWith('n');
+        console.log(res17);
+        
+        //startswith()
+        let res18=str.startsWith('n');
+        console.log(res18);
+
+        //match(regexp)
+        let res19=str.match(/v/g);
+        console.log(res19);
+
+        //matchAll(regexp)
+        for(let i of str.matchAll(/n/g)){
+            console.log(i);
+        }
+
+        //normalize(form)- unicode to string.
+        let res20=str.normalize();
+        console.log(res20);
+
+        //padStart(targetLength,padString)- counting indexes includes 
+        //padEnd()
+        let res21=str.padStart(8,'*');
+        console.log(res21);
+        console.log(str.padEnd(8,'*'));
+
+        //repeat(count)
+        console.log(str.repeat(2));
+
+        //replace(searchValue,newValue)
+        //replaceAll()
+        console.log(str.replace('e','E'));
+        console.log(str.replaceAll('e','E'));
+
+        //search(regexp)
+        console.log(str.search(/e/g));
+
+        //toLowerCase()
+        //toUpperCase()
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        //trim()
+        let str2="  naveen  ";
+        console.log("trimed:",str2.trim());
+        console.log("trimStart:",str2.trimStart());
+        console.log("trimEnd:",str2.trimEnd());
+        console.log("trimLeft:",str2.trimLeft());
+        console.log("trimRight:",str2.trimRight());
+
+        //valueOf()
+        console.log(str.valueOf());
+
+        // array methods in js listed here:
+        console.log('array methods in js listed here:**************************');
+
+        //splice(startIndex,deletecount,adding)
+        let res22=str.split('');
+        let spliced_arr=res22.splice(2,2);
+        console.log(spliced_arr);
+
+        spliced_arr.splice(1,2,'h','i');
+        console.log(spliced_arr);
+
+        spliced_arr.splice(1,0,'naveen','j');
+        console.log(spliced_arr);
+        
+       let res23= spliced_arr.splice(-1,1);
+        console.log(res23);
+
+       // push()
+      console.log( res23.push(2));
+      console.log(res23);
+
+      //pop()
+      res23.pop()
+      console.log(res23);
+
+      //shift()
+      res23.shift()
+      console.log(res23);
+
+      //unshift()
+      res23.unshift('h','w','p')
+      console.log(res23);
+
+      //sort()
+      res23.sort()
+      console.log(res23);
+
+      //reverse()
+      res23.reverse()
+      console.log(res23);
+
+      //fill(fillvalue,startIndex,endindex)
+      res23.fill(0,1,3);
+      console.log(res23);
+
+      //copyWithin(target,start,end)
+      res23.copyWithin(0,1);
+      console.log(res23);
+
+      // concat()
+      let arr2=['h',1,6.7];
+      console.log(arr2.concat(res23));
+
+      //
+
+
+    </script>
+</body>
+</html>
